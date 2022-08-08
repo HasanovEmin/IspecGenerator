@@ -32,44 +32,33 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aveva.ApplicationFramework">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.ApplicationFramework.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Aveva.ApplicationFramework.Implementation">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.ApplicationFramework.Implementation.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\AVEVA DLL\Aveva.ApplicationFramework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.ApplicationFramework.Presentation">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.ApplicationFramework.Presentation.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Aveva.ApplicationFramework.Presentation.Implementation">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.ApplicationFramework.Presentation.Implementation.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Aveva.Core">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.Core.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\AVEVA DLL\Aveva.ApplicationFramework.Presentation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.Core.Database">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.Core.Database.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\AVEVA DLL\Aveva.Core.Database.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.Core.Database.Filters">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.Core.Database.Filters.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\AVEVA DLL\Aveva.Core.Database.Filters.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Aveva.Core.Geometry">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.Core.Geometry.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\AVEVA DLL\Aveva.Core.Geometry.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Aveva.Core.Presentation">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.Core.Presentation.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ClosedXML, Version=0.96.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.96.0\lib\net46\ClosedXML.dll</HintPath>
     </Reference>
-    <Reference Include="Aveva.Core.Utilities">
-      <HintPath>..\..\..\..\Program Files (x86)\AVEVA\Everything3D2.10\Aveva.Core.Utilities.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.16.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.16.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.1.0\lib\net20\ExcelNumberFormat.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -81,6 +70,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExportExcelFile.cs" />
@@ -130,6 +120,9 @@
     <EmbeddedResource Include="SpecControl.resx">
       <DependentUpon>SpecControl.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
